@@ -1,4 +1,4 @@
-# TypeScript ローカル実行セットアップ（docker-mcp なし）
+# TypeScript ローカル実行セットアップ
 
 このリポジトリは、ローカルで TypeScript を実行確認する最小構成です。
 Dockerfile や docker-compose は含めていません（ローカル確認のみ想定）。
