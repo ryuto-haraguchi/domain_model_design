@@ -1,6 +1,6 @@
 // ESM 実行判定（Node）：直接起動時のみ main 実行
 import { fileURLToPath } from 'node:url';
-import { Amount } from './docs/section1/Amount.ts';
+import { Amount } from './section1/Amount.ts';
 
 function main(): void {
   const amount1 = Amount.create(100);
