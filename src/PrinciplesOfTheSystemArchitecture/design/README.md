@@ -101,7 +101,7 @@ design/
 
 ```bash
 # TypeScriptのコンパイルと実行
-npx ts-node src/PrinciplesOfTheSystemArchitecture/design/index.ts
+npx tsx src/PrinciplesOfTheSystemArchitecture/design/index.ts
 ```
 
 ## 設計のポイント
