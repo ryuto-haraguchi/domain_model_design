@@ -24,9 +24,9 @@ import { OrderController } from './presentation/OrderController';
  * - DBの初期データをリポジトリに設定
  */
 export class ApplicationFactory {
-  private userRepository: IUserRepository;
-  private itemRepository: IItemRepository;
-  private orderRepository: IOrderRepository;
+  private userRepository: InMemoryUserRepository;
+  private itemRepository: InMemoryItemRepository;
+  private orderRepository: InMemoryOrderRepository;
 
   constructor(dbData: any) {
     // リポジトリ層の初期化
@@ -82,6 +82,7 @@ export class ApplicationFactory {
 
   /**
    * リポジトリへの直接アクセス（テスト用）
+   * 設計意図: インターフェース型で返すことで、実装の詳細を隠蔽
    */
   getUserRepository(): IUserRepository {
     return this.userRepository;

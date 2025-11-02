@@ -1,5 +1,5 @@
-import { Item } from '../domain/entities/Item';
-import { Price } from '../domain/valueObjects/Price';
+import { Item } from '../../domain/entities/Item';
+import { Price } from '../../domain/valueObjects/Price';
 import { IItemRepository } from '../IItemRepository';
 
 /**

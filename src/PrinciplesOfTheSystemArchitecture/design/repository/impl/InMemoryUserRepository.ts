@@ -1,6 +1,6 @@
-import { User } from '../domain/entities/User';
-import { Email } from '../domain/valueObjects/Email';
-import { IUserRepository } from './IUserRepository';
+import { User } from '../../domain/entities/User';
+import { Email } from '../../domain/valueObjects/Email';
+import { IUserRepository } from '../IUserRepository';
 
 /**
  * ユーザーリポジトリの実装（インメモリ）

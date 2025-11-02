@@ -1,5 +1,5 @@
-import { Order } from '../domain/entities/Order';
-import { Quantity } from '../domain/valueObjects/Quantity';
+import { Order } from '../../domain/entities/Order';
+import { Quantity } from '../../domain/valueObjects/Quantity';
 import { IOrderRepository } from '../IOrderRepository';
 
 /**
