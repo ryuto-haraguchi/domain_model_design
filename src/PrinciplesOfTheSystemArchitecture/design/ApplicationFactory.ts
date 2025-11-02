@@ -28,22 +28,11 @@ export class ApplicationFactory {
   private itemRepository: InMemoryItemRepository;
   private orderRepository: InMemoryOrderRepository;
 
-  constructor(dbData: any) {
+  constructor() {
     // リポジトリ層の初期化
     this.userRepository = new InMemoryUserRepository();
     this.itemRepository = new InMemoryItemRepository();
     this.orderRepository = new InMemoryOrderRepository();
-
-    // 初期データの設定（同期的に実行）
-    this.initializeRepositoriesSync(dbData);
-  }
-
-  private initializeRepositoriesSync(dbData: any): void {
-    // 非同期処理を同期的に実行するため、Promiseを待機しない
-    // 実際の使用時は initializeAsync を呼び出すことを推奨
-    this.userRepository.initializeWithDbData(dbData.users).catch(console.error);
-    this.itemRepository.initializeWithDbData(dbData.items).catch(console.error);
-    this.orderRepository.initializeWithDbData(dbData.orders).catch(console.error);
   }
 
   /**

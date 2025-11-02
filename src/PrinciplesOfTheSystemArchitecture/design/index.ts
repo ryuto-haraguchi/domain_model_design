@@ -10,7 +10,7 @@ import db from '../DB/db';
 // エントリーポイント
 async function main() {
   // アプリケーションの初期化
-  const factory = new ApplicationFactory(db);
+  const factory = new ApplicationFactory();
 
   // 非同期初期化を待機
   await factory.initializeAsync(db);
